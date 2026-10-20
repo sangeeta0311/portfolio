@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sangeeta Goel, PMP | Technology, Business Operations & AI Automation</title>
+<meta name="description" content="Sangeeta Goel, PMP: technology and business operations professional connecting enterprise systems thinking with real-world retail operations and practical AI automation.">
+<style>
+:root{
+  --bg:#faf7f2; --surface:#ffffff; --ink:#1f2a33; --muted:#5d6b76;
+  --brand:#1f4e5f; --brand-dark:#16394a; --accent:#d98b3a; --line:#e6dfd3; --soft:#f1ebe0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;color:var(--brand-dark)}
+a{color:var(--brand)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+section.alt{background:var(--soft)}
+h2{font-size:2rem;margin-bottom:12px}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;color:var(--accent);font-weight:700;margin-bottom:10px}
+.lead{color:var(--muted);max-width:680px;margin-bottom:36px}
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(250,247,242,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav .logo{font-family:Georgia,serif;font-weight:700;color:var(--brand-dark);text-decoration:none;font-size:1.1rem}
+nav ul{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
+nav ul a{text-decoration:none;color:var(--ink);font-size:.92rem}
+nav ul a:hover{color:var(--accent)}
+/* hero */
+.hero{background:linear-gradient(135deg,var(--brand-dark),var(--brand));color:#fff;padding:96px 0 88px}
+.hero h1{color:#fff;font-size:clamp(2.4rem,6vw,3.8rem);margin-bottom:6px}
+.hero .role{font-size:1.15rem;color:#f3d6b0;margin-bottom:22px}
+.hero .tag{font-family:Georgia,serif;font-style:italic;font-size:1.35rem;max-width:640px;margin-bottom:30px}
+.hero .meta{opacity:.85;font-size:.95rem;margin-bottom:32px}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:600;margin:0 10px 10px 0}
+.btn.primary{background:var(--accent);color:#1b1305}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.btn.primary:hover{background:#e49a4d}.btn.ghost:hover{background:rgba(255,255,255,.12)}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin-top:-44px;position:relative}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center;box-shadow:0 6px 18px rgba(31,42,51,.06)}
+.stat b{display:block;font-family:Georgia,serif;font-size:1.9rem;color:var(--brand)}
+.stat span{font-size:.88rem;color:var(--muted)}
+/* about */
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:44px;align-items:start}
+.about p{margin-bottom:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px}
+.card h3{font-size:1.15rem;margin-bottom:12px}
+.card ul{padding-left:18px}.card li{margin-bottom:8px}
+/* grid cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.grid .card h3{display:flex;align-items:center;gap:10px}
+.icon{font-size:1.5rem}
+.status{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#fbeed9;color:#8a5413;padding:3px 10px;border-radius:999px;margin-bottom:12px}
+/* flow */
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin:26px 0;counter-reset:s}
+.flow div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 16px 16px 16px;font-size:.93rem;counter-increment:s}
+.flow div::before{content:counter(s);display:inline-flex;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;margin-bottom:8px}
+.flow div b{display:block}
+/* timeline */
+.timeline{border-left:3px solid var(--line);margin-left:6px;padding-left:28px}
+.job{position:relative;margin-bottom:30px}
+.job::before{content:"";position:absolute;left:-37px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+section.alt .job::before{border-color:var(--soft)}
+.job .when{font-size:.85rem;color:var(--muted);font-weight:600}
+.job h3{font-size:1.2rem;margin:2px 0 2px}
+.job .org{color:var(--brand);font-weight:600;margin-bottom:6px}
+.job p{color:#34424d;font-size:.97rem}
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chip{background:var(--surface);border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:.88rem}
+.skillgroup{margin-bottom:26px}
+.skillgroup h3{font-size:1.05rem;margin-bottom:8px}
+/* edu */
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.edu .card b{display:block;font-family:Georgia,serif;color:var(--brand-dark);font-size:1.05rem}
+.edu .card small{color:var(--muted)}
+/* quote */
+.quote{font-family:Georgia,serif;font-size:1.6rem;line-height:1.4;color:var(--brand-dark);text-align:center;max-width:760px;margin:0 auto}
+.quote small{display:block;margin-top:14px;font-family:"Segoe UI",sans-serif;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+/* contact */
+.contact{text-align:center}
+.contact .lead{margin-left:auto;margin-right:auto}
+.note{font-size:.85rem;color:var(--muted);margin-top:18px}
+footer{background:var(--brand-dark);color:#cfdbe1;text-align:center;padding:26px 20px;font-size:.88rem}
+@media(max-width:780px){
+  .about{grid-template-columns:1fr}
+  nav ul{display:none}
+  section{padding:54px 0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">Sangeeta Goel</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">What I Do</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#growth">Growth</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <h1>Sangeeta Goel, PMP</h1>
+    <p class="role">Technology &amp; Business Operations Professional · Retail Business Co-Owner · AI Automation</p>
+    <p class="tag">Empowering People. Simplifying Business. Creating Possibilities.</p>
+    <p class="meta">📍 Overland Park, Kansas · Serving the Kansas City area, Kansas &amp; Missouri</p>
+    <a class="btn primary" href="#contact">Let's connect</a>
+    <a class="btn ghost" href="#experience">View my journey</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><b>35+</b><span>years in technology</span></div>
+    <div class="stat"><b>17+</b><span>years co-owning a retail business</span></div>
+    <div class="stat"><b>PMP</b><span>certified project manager</span></div>
+    <div class="stat"><b>2</b><span>countries of professional experience</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <p class="eyebrow">About me</p>
+      <h2>Turning complex challenges into practical, people-friendly solutions</h2>
+      <p>I bring together two worlds that rarely meet: <strong>enterprise technology</strong> and <strong>hands-on retail operations</strong>. My career began in software consulting in New Delhi and grew through large-scale systems for organizations like Garmin, EDS and USDA programs, into change and release management at a U.S. federal agency, alongside co-owning a retail business.</p>
+      <p>Alongside that work, I co-own and help run retail businesses in Kansas and Missouri, including gas stations and convenience stores. I know the daily realities first-hand: closing the store, reconciling cash, reading the sales report and making sure numbers add up.</p>
+      <p>Today I'm focused on using practical AI and automation to make everyday work simpler for independent retailers, and I stay committed to lifelong learning about personal growth, self-awareness and empowerment.</p>
+    </div>
+    <div class="card">
+      <h3>My philosophy</h3>
+      <p><em>"Growth begins with awareness, becomes meaningful through action, and creates freedom through consistency."</em></p>
+      <h3 style="margin-top:22px">What guides me</h3>
+      <ul>
+        <li><b>Clarity</b>: from confusion to workable systems</li>
+        <li><b>Simplicity</b>: repeatable processes and usable tools</li>
+        <li><b>Independence</b>: for people and for businesses</li>
+        <li><b>Thoughtful oversight</b>: automation with a human in the loop</li>
+        <li><b>Continuous learning</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="work">
+  <div class="wrap">
+    <p class="eyebrow">What I do</p>
+    <h2>Three ways I create value</h2>
+    <p class="lead">One consistent thread (clarity, empowerment and independence) across technology, business and personal growth.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="icon">🏪</span>Business &amp; AI Transformation</h3>
+        <p>Technology professional and retail operator using automation to simplify daily operations for gas stations, convenience stores and independent store owners. Reporting, reconciliation and routine workflows made simpler.</p>
+        <p style="margin-top:10px;color:var(--muted);font-size:.93rem"><em>Making business smarter, simpler, and more efficient.</em></p>
+      </div>
+      <div class="card">
+        <h3><span class="icon">🧭</span>Technology &amp; Business Leadership</h3>
+        <p>Enterprise software, DevOps, change and release management, and project leadership, translating complex technology into practical business outcomes across technical and non-technical teams.</p>
+        <p style="margin-top:10px;color:var(--muted);font-size:.93rem"><em>Bridging technology, operations, and real-world execution.</em></p>
+      </div>
+      <div class="card">
+        <h3><span class="icon">🌱</span>Personal Growth &amp; Empowerment</h3>
+        <p>A longstanding interest in self-awareness, boundaries, self-worth and resilience, backed by a 2022 Professional EASE Coach Certification. Educational and encouraging, never a substitute for therapy.</p>
+        <p style="margin-top:10px;color:var(--muted);font-size:.93rem"><em>Reclaim your power. Rediscover yourself.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <p class="eyebrow">Experience</p>
+    <h2>A career built on systems, delivery and operations</h2>
+    <p class="lead">From stock-brokerage software in New Delhi to federal change management and retail ownership in the Kansas City area.</p>
+    <div class="timeline">
+
+      <div class="job">
+        <div class="when">2009 – Present</div>
+        <h3>Co-Owner</h3>
+        <div class="org">SM Trading Corporation · Overland Park, KS</div>
+        <p>Co-owns and operates retail businesses, with responsibility for operations, accounts and finances.</p>
+      </div>
+
+      <div class="job">
+        <div class="when">Jan 2018 – Jan 2023</div>
+        <h3>Change Management Specialist</h3>
+        <div class="org">Bureau of the Fiscal Service · Kansas City, MO</div>
+        <p>Supported change, release and DevOps processes; administered and developed on the ServiceNow platform; managed application releases and decommissioning; contributed to LASER (an auction-contingency application built with Spring Boot and AngularJS) in a Scrum team.</p>
+      </div>
+
+      <div class="job">
+        <div class="when">2010 – 2018</div>
+        <h3>Senior Developer / Project Manager</h3>
+        <div class="org">SM Trading Corporation</div>
+        <p>Led design and development of a multi-location <strong>Retail Management System</strong> covering daily sales entry, fuel and stock reconciliation, purchasing, inventory, payments, bank reconciliation, gross profit and reporting. Managed a team of developers and testers.</p>
+      </div>
+
+      <div class="job">
+        <div class="when">2007 – 2010</div>
+        <h3>Application Developer &amp; Project Lead</h3>
+        <div class="org">Garmin International · Olathe, KS</div>
+        <p>Developed and customized Oracle Agile PLM modules, built web services and data-migration utilities, and conceived and delivered <strong>FindPart</strong>, an engineering information application deployed to Garmin workstations worldwide.</p>
+      </div>
+
+      <div class="job">
+        <div class="when">2000 – 2007</div>
+        <h3>Information Analyst · System Architect / Technical Lead</h3>
+        <div class="org">EDS Corporation · Kansas City, MO (USDA Farm Service Agency programs)</div>
+        <p>Designed and delivered web applications for USDA, including disaster-reporting (STORM), Livestock Assistance and Farm Loan programs. Worked with PMO and security teams, trained team members and led technical design.</p>
+      </div>
+
+      <div class="job">
+        <div class="when">1997 – 2000</div>
+        <h3>Technical Lead → Senior Consultant</h3>
+        <div class="org">Mastech · New Resources Corporation · Kansas</div>
+        <p>Led a team of 8–10 on a payroll-interface and budget-reporting system, then designed databases for a healthcare financial and rebates system.</p>
+      </div>
+
+      <div class="job">
+        <div class="when">1990 – 1997</div>
+        <h3>Software Consultant → Senior Systems Executive</h3>
+        <div class="org">Capital Share Track · NIIT Ltd. · New Delhi, India</div>
+        <p>Built an online stock-brokerage system, then delivered systems for clients across Singapore and Indonesia while serving as quality reviewer to ISO 9001 standards.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="skills">
+  <div class="wrap">
+    <p class="eyebrow">Skills &amp; strengths</p>
+    <h2>What I bring to the table</h2>
+    <p class="lead">&nbsp;</p>
+    <div class="skillgroup"><h3>Leadership &amp; delivery</h3>
+      <div class="chips"><span class="chip">Project management (PMP)</span><span class="chip">Agile / Scrum</span><span class="chip">SDLC</span><span class="chip">Change &amp; release management</span><span class="chip">IT governance</span><span class="chip">Stakeholder communication</span><span class="chip">Team leadership</span></div></div>
+    <div class="skillgroup"><h3>Technology</h3>
+      <div class="chips"><span class="chip">Java / J2EE</span><span class="chip">Spring Boot</span><span class="chip">AngularJS</span><span class="chip">Oracle &amp; SQL Server</span><span class="chip">SQL</span><span class="chip">Web services (SOAP)</span><span class="chip">ServiceNow</span><span class="chip">Jira · Bamboo · Git</span><span class="chip">Liquibase</span></div></div>
+    <div class="skillgroup"><h3>AI &amp; automation</h3>
+      <div class="chips"><span class="chip">ChatGPT</span><span class="chip">n8n workflow automation</span><span class="chip">AI agents (email, calendar, meetings)</span><span class="chip">Human-in-the-loop design</span></div></div>
+    <div class="skillgroup"><h3>Retail operations</h3>
+      <div class="chips"><span class="chip">Daily sales reporting</span><span class="chip">Cash &amp; fuel reconciliation</span><span class="chip">POS systems (Verifone Commander)</span><span class="chip">Price book management</span><span class="chip">Store accounts &amp; finances</span></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Education &amp; credentials</p>
+    <h2>Always learning</h2>
+    <p class="lead">&nbsp;</p>
+    <div class="edu">
+      <div class="card"><b>PMP</b>Project Management Professional</div>
+      <div class="card"><b>AI Generalist Accelerator</b>Outskill · 2026</div>
+      <div class="card"><b>Professional EASE Coach Certification</b>EASE Coach &amp; Business School<br><small>Feb – Jun 2022</small></div>
+      <div class="card"><b>P.G. Diploma, Systems Management</b>NIIT, New Delhi<br><small>1991 – 1993</small></div>
+      <div class="card"><b>B.E., Civil Engineering</b>Punjab Engineering College<br><small>1984 – 1988</small></div>
+      <div class="card"><b>Languages</b>English (full professional)<br>Hindi</div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="growth">
+  <div class="wrap">
+    <p class="eyebrow">Beyond the business</p>
+    <h2>Personal growth &amp; empowerment</h2>
+    <p class="lead">Outside of technology and retail, I explore what helps people feel grounded, confident and free to make their own choices.</p>
+    <div class="grid">
+      <div class="card"><h3>Themes I explore</h3>
+        <ul><li>Self-love, self-worth and self-compassion</li><li>Boundaries and the power of saying no</li><li>Emotional resilience and rebuilding confidence</li><li>Habits, affirmations and gratitude</li><li>Mindfulness, meditation and spiritual growth</li></ul></div>
+      <div class="card"><h3>Ideas I'm developing</h3>
+        <ul><li>Short, accessible videos and posts on self-love and boundaries</li><li>A 30-day workbook: <em>Vibration Elevation Blueprint: Reclaim Your Power &amp; Transform Your Energy</em></li></ul>
+        <p class="note">Coaching and spiritual perspectives shared here are educational and are not licensed therapy or medical advice.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="quote">Turning complex business challenges into practical, people-friendly solutions.<small>My promise</small></p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Let's create possibilities together</h2>
+    <p class="lead">Retailers curious about simpler reporting, teams needing a bridge between technology and operations, or anyone who'd like to connect: I'd love to hear from you.</p>
+    <a class="btn primary" href="mailto:sangeeta0311@yahoo.com">Email me</a>
+    <a class="btn primary" style="background:var(--brand);color:#fff" href="https://www.linkedin.com/in/sangeetagoel-pmp-2ab26a8" target="_blank" rel="noopener">LinkedIn</a>
+    <p class="note">Overland Park, Kansas, United States</p>
+  </div>
+</section>
+
+<footer>© <span id="y">2026</span> Sangeeta Goel. All rights reserved.</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
